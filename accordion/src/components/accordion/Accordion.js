@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState} from "react"
 
 function Accordion() {
   const [isActive, setIsActive] = useState(false)
@@ -18,9 +18,9 @@ function Accordion() {
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
           <div>{title}</div>
-          <div>+</div>
+          <div>{isActive ? "-" : "+"}</div>
         </div>
-        <div className="accordion-content"></div>
+        {isActive && <div className="accordion-content">{content}</div>}
       </div>
     </div>
   )
