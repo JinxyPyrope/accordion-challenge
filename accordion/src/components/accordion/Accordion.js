@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from "react"
 
 function Accordion() {
-  return (
-    <div>Accordion</div>
-  )
+  return <div className="accordion">
+    <div className="accordion-item">
+      <div className="accordion-title"></div>
+    </div>
+  </div>
 }
 
 export default Accordion
