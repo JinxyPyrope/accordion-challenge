@@ -1,4 +1,4 @@
-import React, { useState} from "react"
+import React, { useState } from "react"
 
 function Accordion() {
   const [isActive, setIsActive] = useState(false)
